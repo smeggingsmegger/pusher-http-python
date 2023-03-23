@@ -35,8 +35,8 @@ class Client(object):
               backend = RequestsBackend
 
         self._app_id = ensure_text(app_id, "app_id")
-        if not app_id_re.match(self._app_id):
-              raise ValueError("Invalid app id")
+        #if not app_id_re.match(self._app_id):
+        #      raise ValueError("Invalid app id")
 
         self._key = ensure_text(key, "key")
         self._secret = ensure_text(secret, "secret")
